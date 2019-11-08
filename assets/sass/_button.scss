@@ -1,0 +1,24 @@
+$purple: #58006D;
+$white: #EEE;
+
+.filter {
+    &__button {
+        color: $purple;
+        font-size: 14px;
+        letter-spacing: 0.93px;
+        line-height: 17px;
+        box-sizing: border-box;
+        height: 35px;
+        width: 250px;
+        border-radius: 30px;
+        border: 1px solid $purple;
+        background: $white;
+        transition: background-color 0.3s ease,
+            color 0.3s ease;
+
+        &:hover {
+            background-color: $purple;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.pagination {
+  margin-top: 3%;
+  margin-bottom: 8%; }
+  .pagination nav {
+    width: 260px;
+    margin: 0 auto; }
+    .pagination nav ul {
+      display: flex;
+      justify-content: space-around; }
+      .pagination nav ul :first-child,
+      .pagination nav ul :last-child,
+      .pagination nav ul :nth-child(3),
+      .pagination nav ul :nth-child(7) {
+        border-radius: inherit;
+        background-color: transparent;
+        color: black;
+        line-height: 39px; }
+      .pagination nav ul li {
+        color: #EEE;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 100%;
+        text-align: center;
+        width: 23px;
+        height: 23px;
+        background-color: #58006D;
+        line-height: 23px; }

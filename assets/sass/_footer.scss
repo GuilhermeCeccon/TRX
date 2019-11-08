@@ -1,0 +1,137 @@
+footer {
+    background-color: #EEE;
+    padding-top: 40px;
+}
+
+.footer {
+    background-color: #EEE;
+    padding-top: 5%;
+    padding-bottom: 4%;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 40px;
+
+        &--text {
+            margin-bottom: 0;
+            margin-top: 2px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            background-color: #EEE;
+        }
+    }
+
+    &__promotion {
+        position: relative;
+        width: 42%;
+    }
+
+    &__title {
+        color: #111;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        margin-bottom: 18px;
+
+        &--space {
+            padding-top: 22%;
+        }
+    }
+
+    &__title-primary {
+        color: #111;
+        font-size: 22px;
+        letter-spacing: 1px;
+        line-height: 27px;
+        margin-bottom: 33px;
+    }
+
+    &__list--options a {
+        text-decoration: none;
+        color: #111;
+        font-size: 12px;
+        line-height: 25px;
+
+        &:hover {
+            text-decoration: underline;
+            transition: all 0.3s ease-out;
+        }
+    }
+
+    &__img-bank {
+        width: 100%;
+    }
+
+    &__text {
+        color: #767676;
+        font-size: 14px;
+        font-style: italic;
+        line-height: 17px;
+    }
+}
+
+.promotion {
+    &__mail {
+        border-radius: 30px;
+        height: 45px;
+        border: none;
+        outline: none;
+        background-color: #FFF;
+        width: 94%;
+        padding-left: 5%;
+        position: absolute;
+    }
+
+    &__btn {
+        border-radius: 30px;
+        height: 45px;
+        background-color: #58006D;
+        border: 1px solid #58006D;
+        color: #EEE;
+        position: absolute;
+        width: 35%;
+        right: 0;
+        transition: background-color 0.3s ease,
+            color 0.3s ease;
+
+        &:hover {
+            background-color: #EEE;
+            color: #58006D;
+        }
+    }
+}
+
+.social-midias__list {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    align-items: center;
+    padding-top: 25%;
+}
+
+.footer {
+    &__icon-facebook {
+        color: #58006D;
+        font-size: 23px;
+    }
+
+    &__icon-twitter {
+        color: #58006D;
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 1170px) {
+    .social-midias__list {
+        width: 44%;
+    }
+
+    .footer__delivery-payment {
+        width: 28%;
+    }
+
+    .footer__img-bank {
+        width: 100%;
+    }
+}

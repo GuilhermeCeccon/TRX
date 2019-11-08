@@ -1,0 +1,50 @@
+$dimgray: #767676;
+
+.container__left {
+    float: left;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumb {
+    margin-bottom: 32px;
+
+    &__slick {
+        padding-top: 6%;
+        display: flex;
+        flex: 1;
+    }
+
+    nav ul li {
+        display: inline;
+        font-size: 12px;
+        letter-spacing: 0.6px;
+        line-height: 15px;
+
+        +li:before {
+            content: "/\00a0";
+        }
+
+        a {
+            text-decoration: underline;
+            color: $dimgray;
+        }
+    }
+}
+
+.breadcrumb nav ul li .breadcrumb--last:last-child {
+    text-decoration: none;
+}
+
+@media(max-width: 1217px) {
+    .breadcrumb {
+        margin-bottom: 28px;
+    }
+}
+
+@media(max-width: 1180px) {
+    .breadcrumb {
+        margin-bottom: 23px;
+    }
+}

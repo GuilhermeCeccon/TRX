@@ -1,0 +1,102 @@
+$black:#111;
+$purple:#58006D;
+$white: #EEE;
+$dimgrey: #767676;
+
+.result__cards {
+    position: absolute;
+    margin-top: 50px;
+    color: $black;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    line-height: 15px;
+}
+
+.card {
+    width: 22%;
+    padding-top: 80px;
+
+    &__img {
+        position: relative;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__img--width {
+        width: 100%;
+        transition: opacity 175ms linear;
+
+        &:hover {
+            opacity: 0;
+        }
+    }
+}
+
+.informations {
+    &__discount {
+        background-color: $purple;
+        width: 128px;
+        height: 20px;
+        color: #EEE;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    &__description {
+        color: $black;
+        font-family: Montserrat;
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 12px;
+    }
+
+    &__price {
+        color: $dimgrey;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        text-decoration: line-through;
+        margin-bottom: 3px;
+    }
+
+    &__price-current {
+        color: $purple;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+}
+
+.transition {
+    position: absolute;
+}
+
+.card__buttom {
+    border-radius: 30px;
+    border: 1px solid $purple;
+    color: $purple;
+    background-color: $white;
+    font-size: 14px;
+    line-height: 17px;
+    height: 35px;
+    width: 100%;
+    margin-top: 15px;
+    opacity: 0;
+    transition: background-color 0.3s ease,
+        color 0.3s ease;
+
+    &:hover {
+        background-color: $purple;
+        color: white;
+    }
+}
+
+.card:hover .card__buttom {
+    opacity: 1;
+}

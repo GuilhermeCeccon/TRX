@@ -1,0 +1,75 @@
+.result__cards {
+  position: absolute;
+  margin-top: 50px;
+  color: #111;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  line-height: 15px; }
+
+.card {
+  width: 22%;
+  padding-top: 80px; }
+  .card__img {
+    position: relative; }
+  .card__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .card__img--width {
+    width: 100%;
+    transition: opacity 175ms linear; }
+    .card__img--width:hover {
+      opacity: 0; }
+
+.informations__discount {
+  background-color: #58006D;
+  width: 128px;
+  height: 20px;
+  color: #EEE;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 8px; }
+
+.informations__description {
+  color: #111;
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 12px; }
+
+.informations__price {
+  color: #767676;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  text-decoration: line-through;
+  margin-bottom: 3px; }
+
+.informations__price-current {
+  color: #58006D;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px; }
+
+.transition {
+  position: absolute; }
+
+.card__buttom {
+  border-radius: 30px;
+  border: 1px solid #58006D;
+  color: #58006D;
+  background-color: #EEE;
+  font-size: 14px;
+  line-height: 17px;
+  height: 35px;
+  width: 100%;
+  margin-top: 15px;
+  opacity: 0;
+  transition: background-color 0.3s ease, color 0.3s ease; }
+  .card__buttom:hover {
+    background-color: #58006D;
+    color: white; }
+
+.card:hover .card__buttom {
+  opacity: 1; }
