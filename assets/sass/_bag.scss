@@ -1,0 +1,15 @@
+.bag {
+    background-color: white;
+    position: fixed;
+    height: 100vh;
+    z-index: 100;
+    top: 55px;
+    display: none;
+    overflow: auto;
+    right: 0;
+}
+
+// .tt:hover .bag {
+//     display: block;
+//     width: 30%;
+// }

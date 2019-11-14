@@ -1,7 +1,4 @@
-$black:#111;
-$purple:#58006D;
-$white: #EEE;
-$dimgrey: #767676;
+@import 'variables.scss';
 
 .result__cards {
     position: absolute;
@@ -15,6 +12,7 @@ $dimgrey: #767676;
 .card {
     width: 22%;
     padding-top: 80px;
+    position: relative;
 
     &__img {
         position: relative;
@@ -34,6 +32,15 @@ $dimgrey: #767676;
             opacity: 0;
         }
     }
+}
+
+.card__button--align {
+    position: absolute;
+    bottom: 0;
+}
+
+.card__informations {
+    height: 150px;
 }
 
 .informations {
@@ -57,7 +64,7 @@ $dimgrey: #767676;
     }
 
     &__price {
-        color: $dimgrey;
+        color: $dimgray;
         font-size: 12px;
         font-weight: 700;
         line-height: 15px;

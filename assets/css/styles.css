@@ -292,11 +292,11 @@ button {
   width: 250px;
   border-radius: 30px;
   border: 1px solid #58006D;
-  background: #EEE;
+  background: #FFF;
   transition: background-color 0.3s ease, color 0.3s ease; }
   .filter__button:hover {
     background-color: #58006D;
-    color: #EEE; }
+    color: #FFF; }
 
 .slick__caroussel {
   float: right;
@@ -311,21 +311,21 @@ button {
     padding-left: 7%;
     top: 0; }
     .slick__caroussel__banner__title {
-      color: #EEE;
+      color: #FFF;
       font-size: 20px;
       font-weight: 700;
       letter-spacing: 4px;
       line-height: 24px;
       margin-bottom: 12px; }
     .slick__caroussel__banner__text {
-      color: #EEE;
+      color: #FFF;
       font-size: 12px;
       letter-spacing: 0.8px;
       line-height: 15px;
       margin-bottom: 28px; }
     .slick__caroussel__banner__btn {
       border-radius: 30px;
-      background-color: #EEE;
+      background-color: #FFF;
       width: 100%;
       height: 35px;
       color: #58006D;
@@ -336,12 +336,12 @@ button {
       text-transform: uppercase;
       transition: background-color 0.3s ease, color 0.3s ease; }
     .slick__caroussel__banner__btn:hover {
-      color: #EEE;
+      color: #FFF;
       background-color: #58006D; }
 
 .slick-active #slick-slide-control00,
 .slick-active #slick-slide-control01 {
-  background: #EEE;
+  background: #FFF;
   opacity: inherit; }
 
 #slick-slide-control00,
@@ -354,7 +354,7 @@ button {
   height: 12px;
   width: 1px;
   border: 1px solid #111;
-  background: #EEE; }
+  background: #FFF; }
 
 .slick-dots {
   position: absolute;
@@ -395,7 +395,8 @@ button {
 
 .card {
   width: 22%;
-  padding-top: 80px; }
+  padding-top: 80px;
+  position: relative; }
   .card__img {
     position: relative; }
   .card__list {
@@ -407,6 +408,13 @@ button {
     transition: opacity 175ms linear; }
     .card__img--width:hover {
       opacity: 0; }
+
+.card__button--align {
+  position: absolute;
+  bottom: 0; }
+
+.card__informations {
+  height: 150px; }
 
 .informations__discount {
   background-color: #58006D;
@@ -446,7 +454,7 @@ button {
   border-radius: 30px;
   border: 1px solid #58006D;
   color: #58006D;
-  background-color: #EEE;
+  background-color: #FFF;
   font-size: 14px;
   line-height: 17px;
   height: 35px;
@@ -624,6 +632,22 @@ footer {
   display: flex;
   width: 100%; }
 
+.backgroundr,
+.background {
+  background-color: rgba(17, 17, 17, 0.15);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 80px;
+  display: none; }
+
+.navbar--list:hover .background {
+  display: block; }
+  .navbar--list:hover .background:hover {
+    display: none; }
+
 .navbar--options {
   position: relative; }
   .navbar--options::after {
@@ -631,14 +655,14 @@ footer {
     position: absolute;
     margin-top: 0;
     display: block;
-    width: 0;
+    width: 100%;
     background-color: #58006D;
     border-radius: 10px;
-    height: 3px;
+    height: 0;
     z-index: 1;
-    transition: width 0.3s ease-out; }
+    transition: height 0.3s ease-in-out; }
   .navbar--options:hover::after {
-    width: 100%; }
+    height: 3px; }
 
 ul li .show__tab--list {
   display: flex;
@@ -675,6 +699,222 @@ ul li .show__tab--list-itens {
 @media (max-width: 1400px) {
   .show__tab--container {
     width: 90%; } }
+
+.filter__container {
+  background-color: white;
+  position: fixed;
+  height: 100vh;
+  z-index: 100;
+  top: 55px;
+  display: none;
+  overflow: auto; }
+
+.filter__itens {
+  padding-left: 100px;
+  padding-right: 100px; }
+
+.filter__title {
+  color: #111;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 12%; }
+
+.filter__btn-close {
+  float: right;
+  padding: 11px;
+  background: none;
+  color: #111;
+  margin-top: 11px;
+  margin-right: 10px; }
+
+.filter__btn-img {
+  width: 20px; }
+
+.classification__title,
+.color__title,
+.size__title,
+.material__title,
+.collection__title {
+  color: #111;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  margin-bottom: 24px; }
+
+.checkbox {
+  display: flex;
+  justify-content: space-between; }
+
+.filter__clear {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12%; }
+
+.list__products {
+  height: 35px;
+  width: 183px;
+  border-radius: 30px;
+  background-color: #FFF;
+  border: 1px solid #58006D;
+  color: #58006D;
+  transition: color 0.3s, background-color 0.3s; }
+  .list__products:hover {
+    background-color: #58006D;
+    color: white; }
+
+.clear__list {
+  color: #111;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: underline; }
+
+.color {
+  padding-top: 12%; }
+
+.size {
+  padding-top: 12%; }
+
+.material {
+  padding-top: 12%;
+  display: flex;
+  justify-content: space-between; }
+
+.collection {
+  padding-top: 12%;
+  padding-bottom: 23%;
+  display: flex;
+  justify-content: space-between; }
+
+.color__list {
+  display: flex; }
+
+input[type="checkbox"].ckeck__modifier {
+  border-radius: 100%;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border: none; }
+
+input[type="checkbox"]:checked .ckeck__modifier {
+  background-image: url("../img/icon-check.png"); }
+
+input[type="checkbox"].color__list-btn {
+  border-radius: 100%;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  outline: none; }
+  input[type="checkbox"].color__list-btn--lightRed {
+    background-color: #F36; }
+  input[type="checkbox"].color__list-btn--lightBlue {
+    background-color: #33E1FF; }
+  input[type="checkbox"].color__list-btn--blue {
+    background-color: #39F; }
+  input[type="checkbox"].color__list-btn--green {
+    background-color: #2AC940; }
+  input[type="checkbox"].color__list-btn--yellow {
+    background-color: #F3CA3E; }
+  input[type="checkbox"].color__list-btn--burntYellow {
+    background-color: #FA9917; }
+  input[type="checkbox"].color__list-btn--lightPink {
+    background-color: #FF5F58; }
+  input[type="checkbox"].color__list-btn--white {
+    background-color: #FFF;
+    border: 1px solid #BDBDBD; }
+  input[type="checkbox"].color__list-btn--lightGray {
+    background-color: #F2F2F2; }
+  input[type="checkbox"].color__list-btn--grey {
+    background-color: #BDBDBD; }
+  input[type="checkbox"].color__list-btn--darkGrey {
+    background-color: #4F4F4F; }
+  input[type="checkbox"].color__list-btn--black {
+    background-color: #000; }
+  input[type="checkbox"].color__list-btn--purple {
+    background-color: #1C029B; }
+  input[type="checkbox"].color__list-btn--darkBlue {
+    background-color: #0059D0; }
+  input[type="checkbox"].color__list-btn--darkPink {
+    background-color: #FB00CB; }
+  input[type="checkbox"].color__list-btn--pink {
+    background-color: #F467EA; }
+
+input[type="checkbox"]:checked.color__list-btn {
+  background-image: url("../img/icon-check-white.png");
+  background-repeat: no-repeat;
+  background-position-x: 1px;
+  background-position-y: 4px; }
+
+input[type="checkbox"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: icon;
+  background: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: relative;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #767676;
+  outline: none; }
+
+input[type="checkbox"]:checked {
+  background-image: url("../img/icon-check.png");
+  background-repeat: no-repeat;
+  background-position-x: 2px;
+  background-position-y: 5px; }
+
+.size__header {
+  display: flex;
+  justify-content: space-between; }
+
+.classification__options {
+  color: #111;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 16px; }
+
+input[type="radio"] {
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 100%;
+  box-sizing: border-box;
+  position: relative;
+  box-sizing: content-box;
+  width: 18px;
+  height: 18px;
+  background-color: #FFF;
+  border: 1px solid #111; }
+
+input[type="radio"]:checked {
+  background-image: url("../img/icon-checkElipse.png");
+  background-repeat: no-repeat;
+  background-position-x: 4px;
+  background-position-y: 4px; }
+
+.filter__img {
+  height: 12px;
+  width: 25px; }
+
+@media (max-width: 1190px) {
+  .filter__itens {
+    padding-left: 30px;
+    padding-right: 30px; } }
+
+.bag {
+  background-color: white;
+  position: fixed;
+  height: 100vh;
+  z-index: 100;
+  top: 55px;
+  display: none;
+  overflow: auto;
+  right: 0; }
 
 .container {
   width: 80%;
